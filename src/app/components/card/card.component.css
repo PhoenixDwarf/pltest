@@ -1,0 +1,95 @@
+.card{
+    width: 420px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: #56524e;
+    font-family: Rubik;
+}
+
+.top-img{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.middle-img{
+    width: 80px;
+    border-radius: 50px;
+    border: #eaedec 1px solid;
+    padding: 8px;
+}
+.middle{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.middle-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-right{
+    width: 60%;
+}
+.middle-right p{
+    font-size: 14px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-evenly;
+}
+.bottom-button{
+    color: #b3a59a;
+    background-color: #f6f1ed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: none;
+}
+.bottom-button:hover{
+    background-color: #bde3ce;
+    cursor: pointer;
+}
+.bottom-button-icon{
+    display: flex;
+    padding-top: 4px;
+}
+.bottom-button span{
+    padding-left: 8px;
+}
+.button-left{
+    border-bottom-left-radius: 5px;
+}
+.button-right{
+    border-bottom-right-radius: 5px;
+}
+.border-right{
+    border-right: #ffffff 1px solid;
+}
+
+.buttonClicked{
+    color: #e26f52;
+}
+
+@media screen and (max-width: 700px) {
+    .card{
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .middle{
+        flex-direction: column;
+    }
+    .middle-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
