@@ -1,0 +1,17 @@
+<nav>
+    <ul>
+        <li *ngFor="let item of navbarArray" 
+            [ngClass]="[item.lastItem , item.firstItem]">
+
+            <div class="icon">
+                <mat-icon>{{item.icon}}</mat-icon>
+            </div>
+            <div class="option">
+                {{item.name | uppercase}}
+            </div>  
+            <div *ngIf="item.firstItem" class="notification">
+                <span>{{item.notification}}</span>
+            </div>
+        </li>
+    </ul>
+</nav>
