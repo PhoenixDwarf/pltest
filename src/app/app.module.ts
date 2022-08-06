@@ -8,12 +8,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialModule } from './material/material.module';
 import { CardComponent } from './components/card/card.component';
+import { SecondCardComponent } from './components/second-card/second-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    CardComponent
+    CardComponent,
+    SecondCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,23 @@
+<div class="card">
+    <div class="top">
+        <div class="top-left">
+            <img src="../../../assets/images/card-profile.jpg" alt="card-profile">
+        </div>
+        <div class="top-right">
+            <h4>
+                {{userName | uppercase}} <br>
+                {{userLastName | uppercase}}
+            </h4>
+            <p>{{followers | number}} followers</p>
+        </div>
+    </div>
+    <div class="bottom">
+        <ul>
+            <li *ngFor="let option of arrayOptions"
+                [ngClass]="option.lastItem">
+                <span>{{option.option | titlecase}}</span>
+                <mat-icon>{{option.icon}}</mat-icon>
+            </li>
+        </ul>
+    </div>
+</div>

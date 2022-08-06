@@ -5,3 +5,8 @@ export interface Navbar{
     lastItem: string;
     notification?:number;
 }
+export interface Card{
+    option: string;
+    icon: string;
+    lastItem: string;
+}
