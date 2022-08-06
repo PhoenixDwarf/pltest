@@ -2,8 +2,5 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
-    height: 100%;
     align-items: center;
-    background-color: #e0c6b8;
 }
