@@ -1,0 +1,41 @@
+<article class="card">
+    <div class="top">
+        <img class="top-img" src="../../../assets/images/card-main-img.png" alt="card-main-img">
+    </div>
+    <div class="middle">
+        <div class="middle-left">
+            <img class="middle-img" src="../../../assets/images/card-profile.jpg" alt="card-profile">
+        </div>
+        <div class="middle-right">
+            <h1>John Raymons</h1>
+            <p>Your talent amazes! This is awesome. <br>
+            Excited to see the final product.</p>
+        </div>
+    </div>
+    <div class="bottom">
+        <button class="bottom-button button-left border-right"
+                (click)="changeColor(1)"
+                [ngClass]="buttonClicked1">
+            <div class="bottom-button-icon">
+                <mat-icon>visibility</mat-icon>
+            </div>          
+            <span>172</span>
+        </button>
+        <button class="bottom-button border-right"
+                (click)="changeColor(2)"
+                [ngClass]="buttonClicked2">
+            <div class="bottom-button-icon">
+                <mat-icon>chat_bubble</mat-icon>
+            </div>           
+            <span>34</span>
+        </button>
+        <button class="bottom-button button-right"
+                (click)="changeColor(3)"
+                [ngClass]="buttonClicked3">
+            <div class="bottom-button-icon">
+                <mat-icon>favorites</mat-icon>
+            </div>          
+            <span>210</span>
+        </button>
+    </div>
+</article>
