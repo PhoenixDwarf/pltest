@@ -10,26 +10,26 @@ export class NavbarComponent implements OnInit {
 
   navbarArray: Navbar[] = [
     {
-      name: 'check in',
+      name: $localize`check in`,
       icon: 'location_on',
       firstItem: 'first-item',
       lastItem: '',
       notification: 3
     },
     {
-      name: 'events',
+      name: $localize `events`,
       icon: 'favorite',
       firstItem: '',
       lastItem: ''
     },
     {
-      name: 'account',
+      name: $localize `account`,
       icon: 'person',
       firstItem: '',
       lastItem: ''
     },
     {
-      name: 'settings',
+      name: $localize `settings`,
       icon: 'settings',
       firstItem: '',
       lastItem: 'last-item'

@@ -14,22 +14,22 @@ export class SecondCardComponent implements OnInit {
 
   arrayOptions:Card[] = [
     {
-      option: 'edit user',
+      option: $localize`edit user`,
       icon: 'person',
       lastItem: ''
     },
     {
-      option: 'web statics',
+      option: $localize`web statics`,
       icon: 'equalizer',
       lastItem: ''
     },
     {
-      option: 'upload settings',
+      option: $localize`upload settings`,
       icon: 'construction',
       lastItem: ''
     },
     {
-      option: 'events',
+      option: $localize`events`,
       icon: 'location_on',
       lastItem: 'last-item'
     }
