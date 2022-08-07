@@ -11,6 +11,7 @@ import { MaterialModule } from './material/material.module';
 import { CardComponent } from './components/card/card.component';
 import { SecondCardComponent } from './components/second-card/second-card.component';
 import { FormComponent } from './components/form/form.component';
+import { LocaleSwitcherComponent } from './components/locale-switcher/locale-switcher.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormComponent } from './components/form/form.component';
     NavbarComponent,
     CardComponent,
     SecondCardComponent,
-    FormComponent
+    FormComponent,
+    LocaleSwitcherComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 <form [formGroup]="form">
     <div class="contacts">
-        <span class="title padding">Contacs</span>
+        <span class="title padding" i18n>Contacs</span>
         <div class="contact-input padding">
             <mat-form-field class="contact-input-chip" appearance="fill">
                 <mat-chip-list #chipList>
@@ -10,35 +10,35 @@
                             <mat-icon>cancel</mat-icon>
                         </button>
                     </mat-chip>
-                    <input placeholder="New contact..." [matChipInputFor]="chipList"
+                    <input i18n-placeholder placeholder="New contact..." [matChipInputFor]="chipList"
                         [matChipInputSeparatorKeyCodes]="separatorKeysCodes" (matChipInputTokenEnd)="add($event)"
                         formControlName="contacts" class="contact-input">
                 </mat-chip-list>
             </mat-form-field>
-            <span class="error-message" *ngIf="form.controls['contacts'].hasError('required')">
-                Este campo es requerido
+            <span i18n class="error-message" *ngIf="form.controls['contacts'].hasError('required')">
+                This field is required
             </span>
         </div>
     </div>
     <div class="subject flex-column padding">
-        <span class="title">Subject</span>
-        <input type="text" placeholder="You can add a subject" class="custom-input" formControlName="subject"
+        <span class="title" i18n>Subject</span>
+        <input i18n-placeholder type="text" placeholder="You can add a subject" class="custom-input" formControlName="subject"
             [class.is-invalid]="form.controls['subject'].invalid">
-        <span class="error-message" *ngIf="form.controls['subject'].hasError('required')">
-            Este campo es requerido
+        <span i18n class="error-message" *ngIf="form.controls['subject'].hasError('required')">
+            This field is required
         </span>
     </div>
     <div class="message flex-column padding">
-        <span class="title">Message</span>
-        <textarea placeholder="Leave your message here" class="custom-input large-input" formControlName="message"
+        <span class="title" i18n>Message</span>
+        <textarea i18n-placeholder placeholder="Leave your message here" class="custom-input large-input" formControlName="message"
             [class.is-invalid]="form.controls['message'].invalid"></textarea>
-        <span class="error-message" *ngIf="form.controls['message'].hasError('required')">
-            Este campo es requerido
+        <span i18n class="error-message" *ngIf="form.controls['message'].hasError('required')">
+            This field is required
         </span>
     </div>
     <div class="bottom">
-        <div class="bottom-left"><input type="checkbox" class="checker"><span>Save a copy</span></div>
-        <button type="submit" [disabled]="!form.valid" [class.invalid-button]="!form.valid" class="submit-button" (click)="someMethod()">
+        <div class="bottom-left"><input type="checkbox" class="checker"><span i18n>Save a copy</span></div>
+        <button i18n type="submit" [disabled]="!form.valid" [class.invalid-button]="!form.valid" class="submit-button" (click)="someMethod()">
             <div class="icon" [class.invalid-icon]="!form.valid">
                 <mat-icon class="play">play_arrow</mat-icon>
             </div>
