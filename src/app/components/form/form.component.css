@@ -1,0 +1,146 @@
+form{
+    background-color: #ffffff;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding-top: 40px;
+    margin-bottom: 50px;
+    font-family: Rubik;
+    color: #868481;
+}
+.contacts{
+    width: 100%;
+}
+.title{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.contact-input{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact-input-chip{
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.flex-column{
+    display:flex;
+    flex-direction: column;
+}
+.custom-input{
+    padding: 20px;
+    border-radius: 5px;
+    border: #bab8b3 1px solid;
+    font-size: 15px;
+    
+}
+.large-input{
+    min-height: 100px;
+    font-family: Rubik;
+    resize: none;
+}
+.message{
+   margin-bottom: 20px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f2f0;
+    padding: 30px 40px 40px 40px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.bottom-left{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    align-items: center;
+}
+.bottom-left span{
+    font-size: 18px;
+}
+.bottom-left input{
+    width: 20px;
+    height: 20px;
+}
+
+.submit-button{
+    padding: 15px 20px 15px 20px;
+    display: flex;
+    align-items: center;
+    background-color: #e66840;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+}
+.submit-button:hover{
+    background-color: #f0957a;
+    cursor: pointer;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9482c;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    color: #ffffff;
+    margin-right: 10px;
+}
+.play{
+    transform: scale(0.5);
+    margin-left: -1px;
+}
+.checker{
+    background-color: #ffffff;
+    border: #afadaa 1px solid;
+    border-radius: 4px;
+}
+.checker:active:checked{
+   background-color: aqua;
+}
+
+.padding{
+    padding: 0px 40px 0px 40px;
+}
+
+.is-invalid{
+    border: 0.5px solid #a82727;
+}
+.invalid-button{
+    background-color:#b49b9b;
+    color: #868481;
+    border: #868481 1px solid;
+}
+.invalid-icon{
+    background-color: rgb(151, 92, 92);
+    color: #868481;
+}
+.error-message{
+    text-align: start;
+    font-size: small;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #a82727;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 520px) {
+    form{
+        width: 350px;
+    }
+    .bottom-left span{
+        font-size: 12px;
+    }
+    .bottom button{
+        padding: 10px 15px 10px 15px;
+        font-size: 14px;
+    }
+}

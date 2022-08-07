@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [],
@@ -9,7 +11,9 @@ import {MatIconModule} from '@angular/material/icon';
     CommonModule
   ],
   exports: [
-    MatIconModule
+    MatChipsModule,
+    MatFormFieldModule,
+    MatIconModule,
   ]
 })
 export class MaterialModule { }
